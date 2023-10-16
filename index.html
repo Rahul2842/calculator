@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="section">
+                <input style="padding: 15px;"
+                    type="number"
+                    name="first"
+                    id="first"
+                    step="any"
+                >
+                <select id="ope" style="padding: 10px; border-radius: 6px;">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                </select>
+                <input
+                style="padding: 15px;"
+                    type="number"
+                    name="second"
+                    id="second"
+                    step="any"
+                >
+            </div>
+            <div class="section-down">
+                <button onclick="cal()" style="margin-top: 20px; padding: 10px">result</button>
+                <input style="padding: 10px" type="text" name="" id="result" readonly="">
+            </div>
+        </div>
+    </body>
+<script src="script.js"></script>
+</html>
